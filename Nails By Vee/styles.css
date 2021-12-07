@@ -1,0 +1,142 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    
+}
+
+.landing_page {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100%;
+    background-image: url("images/nail-design-g52c40cfdd_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover; 
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tag h1 {
+    top: 50%;
+    left: 50%;
+    font-size: 7vw;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.tag h3 {
+    font-size: 3vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    top: 0%;
+    left: 0%;
+    font-family:cursive;
+    animation: Slide_Up 2.4s ease;
+    padding-left: 15%;
+}
+
+.text2 {
+    font-family: cursive;
+    padding-top: 0px;
+    animation: Slide_Up 2.9s ease;
+    margin-left: 1.3em;
+}
+
+.btn-center {
+    background-color: #f25757;
+    font-family: cursive;
+    font-size: 3vw;
+    align-items: center;
+    justify-content: center;
+    animation: Slide_Up 3.0s ease;
+    margin-left: 35%;
+    border-radius: 4vw;
+    margin-top: 2em;
+    padding: 1vw 2.5vw;
+    border: none;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.btn-center:hover {
+    background-color: aqua;
+    transform: scale(125%);
+    transition: all 0.25s ease;
+}
+
+.navbar {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    justify-content: right;
+
+}
+
+.menu-desk {
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-right: 5vw;
+}
+
+.menu-tag {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.menu-item {
+    padding: 1vw;
+    font-family: cursive;
+    align-items: center;
+    display: flex;
+    font-size: 1.8vw;
+}
+
+.menu-item:hover {
+    transform: scale(125%);
+    background-color:#f25757;
+    transition: all 0.5s ease;
+    border-radius: 2em;
+}
+    
+@keyframes Slide_Up {
+    0% {
+        transform: translateY(650px);
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+}
